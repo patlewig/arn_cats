@@ -5,15 +5,11 @@ Package to facilitate profiling of chemicals through the ECHA ARN groupings usin
 
 To get started, either a local installation using `pip install -e .` can be used from the root directory to install the package. 
 Alternatively using 
-`import sys
-import os
-
-# Get the absolute path of the project root
-project_root = os.path.abspath(os.path.join(os.getcwd(), ".."))
-
-# Add it to sys.path
-sys.path.insert(0, project_root)
-`
+`import sys`
+`import os`
+`project_root = os.path.abspath(os.path.join(os.getcwd(), ".."))`
+`sys.path.insert(0, project_root)`
+<br>
 in a code block in an IDE such as Jupyter notebook will enable importing of the functions directly. Data files associated with the package are located in `arn_cats/data/` Notebooks in `arn_cats/notebooks` walk through how to recreate the RF model, how to recreate the pickle file of training set molecules and how to apply the model and the applicability domain assessment function for new substances imported as part of a pandas dataframe containing identifiers and SMILES.
 
 Project Organisation
