@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+"arn_cats" = ["data/*"]
+
+[tool.setuptools]
+include-package-data = true
+
+[project]
+name = "arn_cats"
+version = "0.0.1"
+description = "Package to facilitate profiling of chemicals through the ECHA ARN groupings."
+readme = "README.md"
+
+requires-python = ">=3.10"
+dependencies = ['pandas==2.2.2', 'numpy==1.26.4', 'scikit-learn==1.4.2', 'rdkit==2023.9.5','matplotlib==3.9.2','seaborn==0.13.2'
+]
+keywords = ["ARN", "categories"]
+license = {file = "LICENSE"}
+authors = [{name = "Grace Patlewicz", email = "grace@comptoxscience.com"}]
+classifiers = ["Development Status :: 3 - Alpha",
+"Intended Audience :: Developers",
+"Programming Language :: Python :: 3",
+"Operating System :: Ubuntu :: Linux",
+]
+
+[project.urls]
+Homepage = "https://github.com/patlewig/arn_cats"
