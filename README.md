@@ -12,6 +12,9 @@ Alternatively using
 <br>
 in a code block in an IDE such as Jupyter notebook will enable importing of the functions directly. Data files associated with the package are located in `arn_cats/data/` Notebooks in `arn_cats/notebooks` walk through how to recreate the RF model, how to recreate the pickle file of training set molecules and how to apply the model and the applicability domain assessment function for new substances imported as part of a pandas dataframe containing identifiers and SMILES.
 
+Best RF model and molecule pickle files along with the original ARN files that form the main outputs of the study are provided here for convenience: 10.5281/zenodo.15446849
+
+
 Project Organisation
 ------------
 
